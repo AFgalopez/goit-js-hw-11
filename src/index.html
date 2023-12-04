@@ -3,13 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 10</title>
+    <title>goit-js-hw-11</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader"></p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
-    <script src="index.js" type="module"></script>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div class="loader"></div>
+      <div class="gallery"></div>
+      <div class="btn-cont">
+
+        <button type="button" class="load-more" style="display: none;">Load more</button>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
